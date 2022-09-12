@@ -55,13 +55,10 @@ function getRandomIndex(array) {
 }
 
 function returnHappiness() {
-  console.log("I'm a button")
   if (affirmationCircle.checked) {
   showMessage = affirmations[getRandomIndex(affirmations)]
-  console.log(showMessage)
-  } if (mantraCircle.checked) {
+    } else (mantraCircle.checked) {
   showMessage = mantras[getRandomIndex(mantras)]
-  console.log(showMessage)
   }
   innerPeace.classList.add('hidden')
   messageSection.innerText = showMessage
